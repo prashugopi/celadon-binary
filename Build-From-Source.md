@@ -44,8 +44,13 @@ make SPARSE_IMG=true flashfiles -j $(nproc)
 
 Build Container
 ```
-$ make clobber
-$ source build/envsetup.sh
-$ lunch cic-userdebug
-$ make cic -j $(nproc)
+mkdir ~/cic
+cd ~/cic
+repo init -u https://github.com/projectceladon/manifest -b celadon/p/mr0/master -m cic
+repo sync -c
+
+#make clobber
+source build/envsetup.sh
+lunch cic-userdebug
+make cic -j $(nproc)
 ```
