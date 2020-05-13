@@ -46,8 +46,8 @@ Build Container
 ```
 mkdir ~/cic
 cd ~/cic
-repo init -u https://github.com/projectceladon/manifest -b celadon/p/mr0/master -m cic
-repo sync -c
+repo init -u https://github.com/projectceladon/manifest -b celadon/p/mr0/master -m stable-build/CIC_01.20.01.12_A09.xml
+repo sync -c --quiet
 
 #make clobber
 source build/envsetup.sh
