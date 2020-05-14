@@ -31,7 +31,7 @@ Build VM
 ```
 mkdir ~/civ
 cd ~/civ
-repo init -u https://github.com/projectceladon/manifest.git
+repo init -u https://github.com/projectceladon/manifest.git -m stable-build/CIV_01.20.01.12_A10.xml
 repo sync -c --quiet
 
 #On Multiple builds
