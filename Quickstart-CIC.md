@@ -1,4 +1,4 @@
-#Quickstart - CIC/AIC Android/Celadon in a Container
+# Quickstart - CIC/AIC Android/Celadon in a Container
 
 ## Install Ubuntu - Validated with 18.04.4 Desktop
 
