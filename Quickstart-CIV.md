@@ -1,7 +1,17 @@
 # Quickstart Guide - CIV Celadon in VM
 
-## Ubuntu Installation
-Follow the Quickstart-CIC.md first for instructions on Ubuntu Installation and version
+## Install Ubuntu - Validated with 18.04.4 Desktop
+
+Download ISO from: https://ubuntu.com/download/desktop
+
+Burn onto USB drive (we use https://rufus.ie/ )
+
+Reboot, boot to USB and install Ubuntu
+* Minimal Installation
+
+## Optional - Install a kernel
+
+Install any prebuilt kernels (for example GVTg kernel) at the point before installing CIV.
 
 ## Download files
 All the Celadon VM binaries are stored here: https://github.com/projectceladon/celadon-binary
@@ -15,7 +25,7 @@ mv <DOWNLOAD FOLDER>/* .
 chmod +x *.sh
 
 #Missing from configuration file
-sudo apt install -y flex
+sudo apt install -y flex make
 
 sudo -E ./setup_host.sh
 #Type Y to REPLACE QEMU
